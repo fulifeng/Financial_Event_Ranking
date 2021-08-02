@@ -17,7 +17,7 @@ pip install -r requirements.txt
 ```
 
 ## Dataset
-Please send an email to fulifeng93 AT gmail.com if you need a copy of our data. 
+Please send an email to ___ if you need a copy of our data. 
 
 ## Training and Testing
 #### Ret
