@@ -7,9 +7,12 @@ torch==1.4.0
 tqdm==4.49.0
 transformers==3.2.0
 
+To create an environment with Conda:
 ```
 git clone https://github.com/fulifeng/Financial_Event_Ranking.git
 cd Financial_Event_Ranking
+conda create -n financial_event_ranking
+conda activate financial_event_ranking
 pip install -r requirements.txt
 ```
 
