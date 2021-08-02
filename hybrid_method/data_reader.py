@@ -206,7 +206,7 @@ def train(args):
 
         if (batch_idx + 1) % args.print_log_steps == 0:
             print_message(batch_idx, train_loss / (batch_idx+1))
-        if (batch_idx + 1)  % args.do_eval_step == 0:
+        if (batch_idx + 1)  % args.do_eval_steps == 0:
             eval_loss, _ = eval(model, eval_reader, DEVICE, criterion)
             if eval_loss < min_eval_loss:
                 min_eval_loss = eval_loss

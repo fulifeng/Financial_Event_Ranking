@@ -24,7 +24,7 @@ def main():
     parser.add_argument('--maxsteps', dest='maxsteps', default=50000, type=int, help='maximum training step')
     parser.add_argument('--bsize', dest='bsize', default=32, type=int, help='batch size')
     parser.add_argument('--accum', dest='accumsteps', default=2, type=int, help='gradient accumulation step')
-    parser.add_argument('--do_eval_step', dest='do_eval_step', default=100, type=int, help='number of training steps between evaluation')
+    parser.add_argument('--do_eval_steps', dest='do_eval_steps', default=100, type=int, help='number of training steps between evaluation')
     parser.add_argument('--print_log_steps', dest='print_log_steps', default=100, type=int)
 
     parser.add_argument('--data_dir', dest='data_dir', default='../metal_data')
@@ -36,7 +36,7 @@ def main():
     parser.add_argument('--ret_result_file', dest='ret_result_file', default='../Ret/model_metal_ret_LR1e-05_BSIZE128/metal_ret_hybrid_test.json')
     parser.add_argument('--clam_result_file', dest='clam_result_file', default='../Cla_M/model_metal_clam_LR1e-05_BSIZE128/metal_clam_hybrid_test.json')
     
-    parser.add_argument('--rerank_num', dest='rerank_num', default=100, help='only reranking the top candidates of Ret')
+    parser.add_argument('--rerank_num', dest='rerank_num', type=int, default=100, help='only reranking the top candidates of Ret')
     
     parser.add_argument('--model_save_dir', dest='model_save_dir', default='./model_metal_hybrid')
     parser.add_argument('--model_to_test', dest='model_to_test', default='./model_metal_hybrid_LR0.0001_BSIZE32', help='path of the model to test')
