@@ -57,7 +57,7 @@ cd ..
 
 ```
 cd hybrid_method
-python train_h.py --lr 1e-04 --maxsteps 50000 --bsize 32 --accum 2 --do_eval_steps 100 --print_log_steps 100 --ret_result_file ../Ret/model_metal_ret_LR1e-05_BSIZE128/metal_ret_hybrid_test.json --clam_result_file ../Cla_M/model_metal_clam_LR1e-05_BSIZE128/metal_clam_hybrid_test.json --rerank_num 100 -- model_save_dir ./model_metal_hybrid
+python train_h.py --lr 1e-04 --maxsteps 50000 --bsize 32 --accum 2 --do_eval_steps 100 --print_log_steps 100 --ret_result_file ../Ret/model_metal_ret_LR1e-05_BSIZE128/metal_ret_hybrid_test.json --clam_result_file ../Cla_M/model_metal_clam_LR1e-05_BSIZE128/metal_clam_hybrid_test.json --rerank_num 100 --model_save_dir ./model_metal_hybrid
 ```
 
 * Testing
