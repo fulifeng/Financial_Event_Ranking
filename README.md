@@ -8,7 +8,7 @@ tqdm==4.49.0
 transformers==3.2.0
 
 To create an environment with Conda:
-```Bash
+```
 git clone https://github.com/fulifeng/Financial_Event_Ranking.git
 cd Financial_Event_Ranking
 conda create -n financial_event_ranking
